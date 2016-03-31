@@ -26,36 +26,43 @@ body > .ember-view {
   text-align: center;
 }
 
+// navbar
+
 .brand-logo {
   font-family: 'Shadows Into Light', cursive;
-  margin-left: 10px;
+  margin-left: 1%;
 }
+
+#nav-mobile {
+  margin-right: 0.5%
+}
+
+// Welcome area
 
 .cover-heading {
   font-size: 120px;
   font-family: 'Shadows Into Light', cursive;
 }
 
-.lead {
-  padding-top: 10px;
+.inner {
+  position: relative;
+  transform: translateY(75%);
 }
 
-.btn-toolbar {
-  padding-top: 10px;
+.lead, .btn-toolbar {
+  padding-top: 0.5%;
 }
 
 .btn-large {
   font-weight: bold;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
 }
 
-.mastfoot {
+.footer {
   position: absolute;
   bottom: 0;
   right: 0;
-}
-
-.inner {
-  padding: 30px;
+  margin-bottom: 1%;
+  margin-right: 1%;
 }
