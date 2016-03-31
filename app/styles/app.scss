@@ -1,11 +1,22 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
-@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(https://fonts.googleapis.com/css?family=Just+Another+Hand);
 
 body > .ember-view {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+.brand-logo {
+  font-family: 'Just Another Hand', cursive;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+nav .brand-logo {
+  margin-left: 1%;
+  font-size: 3.2rem;
 }
 
 .cover-wrapper {
@@ -21,17 +32,10 @@ body > .ember-view {
 }
 
 .cover-container {
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
 }
 
 // navbar
-
-.brand-logo {
-  font-family: 'Shadows Into Light', cursive;
-  margin-left: 1%;
-}
 
 #nav-mobile {
   margin-right: 0.5%
@@ -40,8 +44,7 @@ body > .ember-view {
 // Welcome area
 
 .cover-heading {
-  font-size: 120px;
-  font-family: 'Shadows Into Light', cursive;
+  font-size: 13rem;
 }
 
 .inner {
@@ -49,8 +52,9 @@ body > .ember-view {
   transform: translateY(75%);
 }
 
-.lead, .btn-toolbar {
-  padding-top: 0.5%;
+.lead {
+  margin-top: 0;
+  margin-bottom: 3%;
 }
 
 .btn-large {
