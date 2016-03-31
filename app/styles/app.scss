@@ -1,6 +1,6 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
-@import url(https://fonts.googleapis.com/css?family=Just+Another+Hand);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 body > .ember-view {
   display: flex;
@@ -9,7 +9,7 @@ body > .ember-view {
 }
 
 .brand-logo {
-  font-family: 'Just Another Hand', cursive;
+  font-family: 'Shadows Into Light', cursive;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -44,12 +44,13 @@ nav .brand-logo {
 // Welcome area
 
 .cover-heading {
-  font-size: 13rem;
+  font-size: 10rem;
+  margin-bottom: 2vh;
 }
 
 .inner {
   position: relative;
-  transform: translateY(65%);
+  transform: translateY(80%);
 }
 
 .lead {
