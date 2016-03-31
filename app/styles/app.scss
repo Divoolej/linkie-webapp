@@ -71,3 +71,14 @@ nav .brand-logo {
   margin-bottom: 1vh;
   margin-right: 1vw;
 }
+
+// protected.hbs
+.main-content {
+  padding-left: 240px;
+}
+
+@media only screen and (max-width : 992px) {
+  .main-content {
+    padding-left: 0;
+  }
+}
