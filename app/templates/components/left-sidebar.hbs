@@ -1,6 +1,18 @@
-<ul id="slide-out" class="side-nav fixed">
-  <li><div class="brand-logo sidebar-logo blue-text">linkie</div></li>
-</ul>
-<a href="#" data-activates="slide-out" class="button-collapse">
-  <i class="mdi-navigation-menu">#</i>
-</a>
+<header>
+  <div class="container"><a href="#" data-activates="slide-out" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a></div>
+
+  <ul id="slide-out" class="side-nav fixed">
+    <li><div id="logo-container" class="sidebar-logo blue-text">linkie</div></li>
+    <li class="search">
+      {{!-- TODO: add 'focused' class on search box focus. --}}
+      <div class="search-wrapper card">
+        <input id="search"><i class="material-icons">search</i>
+        <div class="search-results"></div>
+      </div>
+    </li>
+
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse">
+    <i class="mdi-navigation-menu"></i>
+  </a>
+</header>
