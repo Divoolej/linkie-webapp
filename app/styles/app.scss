@@ -41,6 +41,23 @@ nav .brand-logo {
   margin-right: 0.5vw;
 }
 
+// sidebar
+.sidebar-logo {
+  font-size: 45px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sidebar-logo:hover {
+  // disable text highlighter cursor
+  cursor: default;
+  // disable text select
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+}
+
 // Welcome area
 
 .cover-heading {
