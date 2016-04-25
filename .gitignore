@@ -16,24 +16,4 @@
 npm-debug.log
 testem.log
 
-.idea/inspectionProfiles/Project_Default.xml
-
-.idea/inspectionProfiles/profiles_settings.xml
-
-.idea/jsLibraryMappings.xml
-
-.idea/jsLinters/jshint.xml
-
-.idea/libraries/bower_components_linkie_webapp.xml
-
-.idea/libraries/node_modules_linkie_webapp.xml
-
-.idea/linkie-webapp.iml
-
-.idea/misc.xml
-
-.idea/modules.xml
-
-.idea/vcs.xml
-
-.idea/workspace.xml
+.idea/
