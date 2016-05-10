@@ -49,6 +49,7 @@
     "ember-sidebars": "0.2.1",
     "ember-truth-helpers": "1.2.0",
     "liquid-fire": "0.23.0",
-    "loader.js": "^4.0.1"
+    "loader.js": "^4.0.1",
+    "torii": "0.8.0"
   }
 }
