@@ -44,7 +44,8 @@ nav .brand-logo {
 
 .inner {
   position: relative;
-  transform: translateY(80%);
+  margin-top: 20vh;
+  // transform: translateY(80%);
 }
 
 .lead {
@@ -68,6 +69,15 @@ nav .brand-logo {
 
 .main-content {
   padding-left: 240px;
+}
+
+.btn-toolbar {
+  padding-top: 1vw;
+}
+
+.fb-connect-button {
+  text-transform: none;
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width : 992px) {
