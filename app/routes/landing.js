@@ -5,8 +5,7 @@ export default Ember.Route.extend({
     signInViaFacebook: function() {
       var route = this,
           controller = this.controllerFor('landing');
-      this.get('session').open('facebook-connect').then(function(authorization) {
-        debugger;
+      this.get('session').open('facebook-connect').then(function() {
         route.transitionTo('profile');
       }, function(error) {
         controller.set('error', "Could not sign you in: " + error.message);
