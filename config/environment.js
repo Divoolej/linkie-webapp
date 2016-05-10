@@ -46,5 +46,13 @@ module.exports = function(environment) {
 
   }
 
+  ENV.torii = {
+    providers: {
+      'facebook-connect': {
+        appId: '578687135639440'
+      }
+    }
+  }
+
   return ENV;
 };
