@@ -47,6 +47,7 @@ module.exports = function(environment) {
   }
 
   ENV.torii = {
+    sessionServiceName: 'session',
     providers: {
       'facebook-connect': {
         appId: '578687135639440'
