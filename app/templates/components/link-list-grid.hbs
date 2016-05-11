@@ -1,1 +1,5 @@
-{{yield}}
+{{#masonry-grid items=items customLayout=true as |item index grid|}}
+  {{#masonry-item item=item grid=grid }}
+    {{link-item title=item.title color=item.color}}
+  {{/masonry-item}}
+{{/masonry-grid}}
