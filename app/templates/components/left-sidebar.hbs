@@ -1,21 +1,23 @@
-<header>
-  <div class="container"><a href="#" data-activates="slide-out" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a></div>
+  <div class="container"><a href="#" data-activates="slide-out" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a>
 
   <ul id="slide-out" class="side-nav left-sidebar fixed">
-    <li class="list-item"><div id="logo-container" class="sidebar-logo blue-text">linkie</div></li>
-    <li class="list-item search">
-      {{!-- TODO: add 'focused' class on search box focus. --}}
-      <div class="search-wrapper card">
-        <input id="search"><i class="material-icons">search</i>
-        <div class="search-results"></div>
-      </div>
-    </li>
-    <li class="list-item">
-      {{component 'category-list'}}
-    </li>
+    <div class="sidebar-container">
+
+      <li class="list-item"><div id="logo-container" class="sidebar-logo blue-text">linkie</div></li>
+      <li class="list-item search">
+        {{!-- TODO: add 'focused' class on search box focus. --}}
+        <div class="search-wrapper card">
+          <input id="search"><i class="material-icons">search</i>
+          <div class="search-results"></div>
+        </div>
+      </li>
+      <li class="list-item">
+        {{component 'category-list'}}
+      </li>
+    </div>
 
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse">
     <i class="mdi-navigation-menu"></i>
   </a>
-</header>
+</div>
