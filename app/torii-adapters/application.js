@@ -22,22 +22,22 @@ export default Ember.Object.extend({
 
     // let fbToken = authentication.accessToken;
     // let userId = authentication.userId;
-
-    return new Ember.RSVP.Promise((resolve, reject) => {
-      Ember.$.ajax({
-        // TODO fill in backend URL
-        type: 'POST',
-        url: 'api/session',
-        data: {'code':fbToken},
-        dataType: 'json',
-        success: Ember.run.bind(null, resolve),
-        error: Ember.run.bind(null, reject)
-      });
-    }, "Post fbToken to server").then((data) => {
-      let linkieToken = data.accessToken;
-      this.set('storage.token', linkieToken);
-      return { token };
-    });
+  //
+  //   return new Ember.RSVP.Promise((resolve, reject) => {
+  //     Ember.$.ajax({
+  //       // TODO fill in backend URL
+  //       type: 'POST',
+  //       url: 'api/session',
+  //       data: {'code':fbToken},
+  //       dataType: 'json',
+  //       success: Ember.run.bind(null, resolve),
+  //       error: Ember.run.bind(null, reject)
+  //     });
+  //   }, "Post fbToken to server").then((data) => {
+  //     let linkieToken = data.accessToken;
+  //     this.set('storage.token', linkieToken);
+  //     return { token };
+  //   });
   },
 
   // clear the local storage key and return a promise which will resolve.
