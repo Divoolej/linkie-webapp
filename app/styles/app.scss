@@ -69,6 +69,7 @@ nav .brand-logo {
 
 .main-content {
   padding-left: 260px;
+  padding-right: 100px;
 }
 
 .btn-toolbar {
@@ -79,6 +80,17 @@ nav .brand-logo {
   text-transform: none;
   font-size: 1.2rem;
 }
+
+.card.small .card-content {
+  max-height: none;
+}
+
+/* fluid 5 columns */
+.grid-sizer,
+.grid-item { width: 20%; }
+/* 2 columns wide */
+.grid-item--width2 { width: 40%; }
+
 
 @media only screen and (max-width : 992px) {
   .main-content {

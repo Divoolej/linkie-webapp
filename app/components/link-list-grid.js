@@ -7,8 +7,10 @@ export default Ember.Component.extend({
     this.$().isotope({
       // options
       itemSelector: '.grid-item',
-      layoutMode: 'fitRows'
+      percentPosition: true,
+      masonry: {
+        columnWidth: '.grid-sizer'
+      }
     });
   }
-
 });
