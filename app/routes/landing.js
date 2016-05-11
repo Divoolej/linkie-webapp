@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   actions: {
-    signInViaFacebook: function() {
+    signInViaFacebook() {
       var route = this,
           controller = this.controllerFor('landing');
       this.get('session').open('facebook-connect').then(function() {
