@@ -6,7 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.authenticatedRoute('profile');
+  this.route('profile');
+  // TODO uncomment before PR
+  // this.authenticatedRoute('profile');
   this.route('landing');
 });
 
