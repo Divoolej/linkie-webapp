@@ -16,8 +16,13 @@ export default Ember.Object.extend({
 
   // resolve with session data and store token in local storage
   open(authentication) {
-    let fbToken = authentication.accessToken;
-    let userId = authentication.userId;
+    // dummy token to persist session until server is up
+    // (otherwise it would redirect you to the login page)
+    this.set('storage.token', "dummyToken");
+
+    // let fbToken = authentication.accessToken;
+    // let userId = authentication.userId;
+
     // return new Ember.RSVP.Promise((resolve, reject) => {
     //   Ember.$.ajax({
     //     // TODO fill in backend URL
