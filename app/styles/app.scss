@@ -36,7 +36,6 @@ nav .brand-logo {
 }
 
 // Welcome area
-
 .cover-heading {
   font-size: 10rem;
   margin-bottom: 2vh;
@@ -80,6 +79,10 @@ nav .brand-logo {
 .fb-connect-button {
   text-transform: none;
   font-size: 1.2rem;
+}
+
+.card {
+  max-height: 200px;
 }
 
 .card.small .card-content {
