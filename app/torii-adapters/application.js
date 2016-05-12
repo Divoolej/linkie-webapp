@@ -36,7 +36,8 @@ export default Ember.Object.extend({
       console.log(data);
       // let linkieToken = data.user.accessToken;
       // this.set('storage.token', linkieToken);
-      return { linkieToken };
+      let token = "dummyToken";
+      return { token };
     });
   },
 
