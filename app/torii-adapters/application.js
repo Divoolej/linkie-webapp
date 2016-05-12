@@ -18,7 +18,7 @@ export default Ember.Object.extend({
   open(authentication) {
     // dummy token to persist session until server is up
     // (otherwise it would redirect you to the login page)
-    // this.set('storage.token', "dummyToken");
+    this.set('storage.token', "dummyToken");
 
     let fbToken = authentication.accessToken;
     let userId = authentication.userId;
@@ -34,8 +34,8 @@ export default Ember.Object.extend({
       });
     }, "Post fbToken to server").then((data) => {
       console.log(data);
-      let linkieToken = data.user.accessToken;
-      this.set('storage.token', linkieToken);
+      // let linkieToken = data.user.accessToken;
+      // this.set('storage.token', linkieToken);
       return { linkieToken };
     });
   },
