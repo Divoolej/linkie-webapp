@@ -67,12 +67,6 @@ nav .brand-logo {
   margin-right: 1vw;
 }
 
-.main-content {
-  padding-left: 280px;
-  padding-right: 50px;
-  padding-top: 30px;
-}
-
 .btn-toolbar {
   padding-top: 1vw;
 }
@@ -84,19 +78,6 @@ nav .brand-logo {
 
 .progress {
   margin: 0;
-}
-
-/* fluid 5 columns */
-.grid-sizer,
-.grid-item { width: 20%; }
-/* 2 columns wide */
-.grid-item--width2 { width: 40%; }
-
-
-@media only screen and (max-width : 992px) {
-  .main-content {
-    padding-left: 0;
-  }
 }
 
 .bold {

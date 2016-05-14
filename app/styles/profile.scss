@@ -1,20 +1,50 @@
 .main-content {
   height: 100vh;
+  padding-left: 16.2em;
+  padding-top: 1em;
+}
+
+@media only screen and (max-width : 992px) {
+  .main-content {
+    padding-left: 0;
+  }
 }
 
 .card {
-  max-height: 14em;
+  max-height: 12em;
 }
 
 // Link card
 .card.small {
 
   .card-content {
-  max-height: 14em;
+  max-height: 12em;
   padding: 0.8em;
   }
 
   .card-action {
     padding: 0.8em;
   }
+}
+
+/* 2 columns for small screens */
+.grid-sizer,
+.grid-item { width: 50%; }
+
+// 3 columns for medium screens
+@media screen and (min-width: 768px) {
+  .grid-sizer,
+  .grid-item { width: 33.333%; }
+}
+
+/* 4 columns for large screens */
+@media screen and (min-width: 1280px) {
+  .grid-sizer,
+  .grid-item { width: 25%; }
+}
+
+// 5 columns for xl screens
+@media screen and (min-width: 1500px) {
+  .grid-sizer,
+  .grid-item { width: 20%; }
 }
