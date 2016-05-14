@@ -1,4 +1,8 @@
-import JSONAPIAdapter from 'ember-data/adapters/json-api';
+import SailsRESTAdapter from 'ember-data-sails/adapters/sails-rest';
 
-export default JSONAPIAdapter.extend({
+export default SailsRESTAdapter.extend({
+  host: 'https://linkie-backend.herokuapp.com',
+  namespace: '',
+  useCSRF: true,
+  coalesceFindRequests: true
 });
