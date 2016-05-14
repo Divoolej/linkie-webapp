@@ -8,16 +8,14 @@
         <div class="search-wrapper card">
           <input id="search"><i class="material-icons">search</i>
           <div class="search-results"></div>
-
         </div>
       </li>
 
       <li class="list-item">
         <ul class="collection">
-          {{#category-list-item}}Programming{{/category-list-item}}
-          {{#category-list-item}}Music{{/category-list-item}}
-          {{#category-list-item}}Knitting{{/category-list-item}}
-          {{#category-list-item}}Food{{/category-list-item}}
+          {{#each model as category}}
+            {{category-list-item title=category.title}}
+          {{/each}}
         </ul>
       </li>
     </div>

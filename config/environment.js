@@ -3,7 +3,8 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'linkie-webapp',
-    environment: environment,
+    // TODO change 'environment' to argument value
+    environment: 'development',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -25,6 +26,7 @@ module.exports = function(environment) {
     ENV.APP.LOG_TRANSITIONS = true;
     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.SAILS_LOG_LEVEL = 'debug';
   }
 
   if (environment === 'test') {
