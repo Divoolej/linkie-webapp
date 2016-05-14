@@ -1,18 +1,17 @@
 // sidebar
 .sidebar-container {
-  margin-top: 35px;
+  margin-top: 25px;
 }
 
 .sidebar-logo {
-  font-size: 3.5rem;
-  margin-top: 15px;
-  margin-bottom: 75px;
+  font-size: 4.3rem;
   text-align: center;
+  padding-bottom: 70px;
   font-family: 'Shadows Into Light', cursive;
 }
 
 a.button-collapse.top-nav.full {
-    line-height: 122px
+    line-height: 122px;
 }
 
 a.button-collapse.top-nav i {
@@ -34,6 +33,11 @@ a.button-collapse.top-nav i {
     &.active {
       background-color: rgba(0,0,0,.05);
     }
+  }
+
+  a {
+    padding-top: 10px;
+    padding-left: 18px;
   }
 
   // Only show scrollbar on hover
