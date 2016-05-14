@@ -11,5 +11,6 @@ export default Ember.Component.extend({
     this.$(".search-wrapper").focusout(function() {
       $(this).removeClass("focused");
     });
+    this.$("#search").attr("maxlength", 20);
   }
 });

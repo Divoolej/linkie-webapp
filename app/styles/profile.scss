@@ -1,8 +1,20 @@
-
-.card {
-  max-height: 200px;
+.main-content {
+  height: 100vh;
 }
 
-.card.small .card-content {
-  max-height: 200px;
+.card {
+  max-height: 14em;
+}
+
+// Link card
+.card.small {
+
+  .card-content {
+  max-height: 14em;
+  padding: 0.8em;
+  }
+
+  .card-action {
+    padding: 0.8em;
+  }
 }
