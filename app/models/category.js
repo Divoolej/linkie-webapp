@@ -3,5 +3,4 @@ import attr from 'ember-data/attr';
 
 export default Model.extend({
   title: attr('string'),
-  createdAt: attr('date')
 });

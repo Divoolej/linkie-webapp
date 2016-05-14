@@ -1,8 +1,8 @@
-import SailsRESTAdapter from 'ember-data-sails/adapters/sails-rest';
+import DS from 'ember-data';
 
-export default SailsRESTAdapter.extend({
-  host: 'https://linkie-backend.herokuapp.com',
-  namespace: '',
-  useCSRF: true,
-  coalesceFindRequests: true
+export default DS.RESTAdapter.extend({
+  // host: 'https://linkie-backend.herokuapp.com',
+  // namespace: ''
+  host: 'http://demo0486561.mockable.io/',
+  namespace: ''
 });
