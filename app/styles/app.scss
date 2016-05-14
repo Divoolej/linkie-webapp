@@ -1,5 +1,6 @@
 @import 'materialize';
 @import 'sidebar';
+@import 'profile';
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 body > .ember-view {
@@ -81,14 +82,6 @@ nav .brand-logo {
   font-size: 1.2rem;
 }
 
-.card {
-  max-height: 200px;
-}
-
-.card.small .card-content {
-  max-height: 200px;
-}
-
 .progress {
   margin: 0;
 }
@@ -104,4 +97,8 @@ nav .brand-logo {
   .main-content {
     padding-left: 0;
   }
+}
+
+.bold {
+  font-weight: bold;
 }

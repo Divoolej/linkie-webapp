@@ -1,8 +1,8 @@
   <div class="container"><a href="#" data-activates="slide-out" class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i class="material-icons">menu</i></a>
-  <ul id="slide-out" class="side-nav left-sidebar fixed lime lighten-5">
+  <ul id="slide-out" class="side-nav left-sidebar fixed">
     <div class="sidebar-container">
 
-      <li class="list-item"><div id="logo-container" class="sidebar-logo blue-text">linkie</div></li>
+      <li class="list-item"><div id="logo-container" class="sidebar-logo deep-purple-text text-accent-2">linkie</div></li>
 
       <li class="list-item search">
         <div class="search-wrapper card">
@@ -12,7 +12,7 @@
       </li>
 
       <li class="list-item">
-        <ul class="collection">
+        <ul class="collection category-collection">
           {{#each model.categories as |category|}}
             {{category-list-item title=category.title}}
           {{/each}}
