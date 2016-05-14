@@ -11,6 +11,20 @@
   font-family: 'Shadows Into Light', cursive;
 }
 
+a.button-collapse.top-nav.full {
+    line-height: 122px
+}
+
+a.button-collapse.top-nav i {
+    font-size: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    a.button-collapse.top-nav {
+        left:5%
+    }
+}
+
 .side-nav.fixed {
   overflow: hidden;
 
