@@ -13,7 +13,7 @@
 
       <li class="list-item">
         <ul class="collection">
-          {{#each model as |category|}}
+          {{#each model.categories as |category|}}
             {{category-list-item title=category.title}}
           {{/each}}
         </ul>
