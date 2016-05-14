@@ -5,5 +5,11 @@ export default Ember.Component.extend({
     this.$(".button-collapse").sideNav({
       closeOnClick: true
     });
+    this.$(".search-wrapper").focusin(function() {
+      $(this).addClass("focused");
+    });
+    this.$(".search-wrapper").focusout(function() {
+      $(this).removeClass("focused");
+    });
   }
 });
