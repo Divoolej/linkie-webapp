@@ -1,12 +1,14 @@
 .main-content {
   height: 100vh;
-  padding-left: 16.2em;
+  padding-left: 18.2em;
   padding-top: 1em;
+  padding-right: 2em;
 }
 
 @media only screen and (max-width : 992px) {
   .main-content {
-    padding-left: 0;
+    padding-left: 0.8em;
+    padding-right: 0.8  em;
   }
 }
 
@@ -27,9 +29,16 @@
   }
 }
 
-/* 2 columns for small screens */
+
+// tiny screens
 .grid-sizer,
-.grid-item { width: 50%; }
+.grid-item { width: 100%; }
+
+// 2 columns for small screens
+@media screen and (min-width: 480px) {
+  .grid-sizer,
+  .grid-item { width: 50%; }
+}
 
 // 3 columns for medium screens
 @media screen and (min-width: 768px) {
@@ -37,7 +46,7 @@
   .grid-item { width: 33.333%; }
 }
 
-/* 4 columns for large screens */
+// 4 columns for large screens
 @media screen and (min-width: 1280px) {
   .grid-sizer,
   .grid-item { width: 25%; }
