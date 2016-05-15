@@ -1,6 +1,7 @@
 @import 'materialize';
 @import 'sidebar';
 @import 'profile';
+@import 'landing';
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 body > .ember-view {
@@ -13,71 +14,6 @@ body > .ember-view {
   font-family: 'Shadows Into Light', cursive;
   margin-bottom: 0;
   margin-top: 0;
-}
-
-nav .brand-logo {
-  margin-left: 1vw;
-  font-size: 2.5rem;
-}
-
-.cover-wrapper {
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
-  display: table;
-  background: url(images/bg.jpg) no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.cover-container {
-  text-align: center;
-}
-
-// Welcome area
-.cover-heading {
-  font-size: 10rem;
-  margin-bottom: 2vh;
-}
-
-.inner {
-  position: relative;
-  margin-top: 20vh;
-  // transform: translateY(80%);
-}
-
-.lead {
-  margin-top: 0;
-  margin-bottom: 3vh;
-}
-
-.btn-large {
-  font-weight: bold;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 1vh;
-  margin-right: 1vw;
-}
-
-.btn-toolbar {
-  padding-top: 1vw;
-}
-
-.fb-connect-button {
-  text-transform: none;
-  font-size: 1.2rem;
-}
-
-.progress {
-  margin: 0;
 }
 
 .bold {
