@@ -1,0 +1,40 @@
+{{#if session.isWorking }}
+  {{spinner-loader}}
+{{else}}
+  <div class="cover-wrapper">
+
+    <div class="navbar">
+      <nav>
+        <div class="nav-wrapper red lighten-1">
+          <a href="#" class="brand-logo lime-text text-accent-1">linkie</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    {{error}}
+    {{!--TODO show error in modal window (?)--}}
+
+    <div class="cover-container">
+      <div class="cover inner">
+        <h1 class="cover-heading lime-text text-accent-1 brand-logo">linkie</h1>
+        <p class="flow-text white-text lead">Create lists of your favourite web links and instantly share them with your friends!</p>
+        <div class="btn-toolbar">
+
+          <a {{action 'signInViaFacebook'}} class="waves-effect waves-light btn-large indigo fb-connect-button"><i class="material-icons left">{{inline-svg "assets/images/facebook"}}</i>Connect with Facebook</a>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="inner grey-text">
+          <p>Linkie Team, 2016</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{{/if}}
