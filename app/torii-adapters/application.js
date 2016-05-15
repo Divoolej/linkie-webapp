@@ -16,12 +16,8 @@ export default Ember.Object.extend({
 
   // resolve with session data and store token in local storage
   open(authentication) {
-    // dummy token to persist session until server is up
-    // (otherwise it would redirect you to the login page)
-    this.set('storage.token', "dummyToken");
-
-    let fbToken = authentication.accessToken;
-    let userId = authentication.userId;
+    // let fbToken = authentication.accessToken;
+    // let userId = authentication.userId;
 
     return new Ember.RSVP.Promise((resolve, reject) => {
       Ember.$.ajax({
@@ -33,11 +29,10 @@ export default Ember.Object.extend({
         error: Ember.run.bind(null, reject)
       });
     }, "Post fbToken to server").then((data) => {
-      console.log(data);
-      // let linkieToken = data.user.accessToken;
-      // this.set('storage.token', linkieToken);
-      let token = "dummyToken";
-      return { token };
+      let linkieToken = data.accessToken;
+      // save linkie token in local storage
+      this.set('storage.token', linkieToken);
+      return { linkieToken };
     });
   },
 
