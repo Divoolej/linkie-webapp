@@ -1,9 +1,10 @@
-{{#if session.isWorking }}
-  {{spinner-loader}}
-{{else}}
   <div class="cover-wrapper">
-
     <div class="navbar">
+
+      {{#if session.isWorking }}
+        {{spinner-loader}}
+      {{/if}}
+
       <nav>
         <div class="nav-wrapper red lighten-1">
           <a href="#" class="brand-logo lime-text text-accent-1">linkie</a>
@@ -37,4 +38,3 @@
 
     </div>
   </div>
-{{/if}}

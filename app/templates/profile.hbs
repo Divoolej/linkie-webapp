@@ -3,7 +3,18 @@
 </div>
 
 <div class="main-content">
-  <h1>Profile main</h1>
+
+  <div class="row">
+    <div class="col s3"><br /></div>
+
+    <div class="input-field col s6">
+      <input placeholder="paste link here" id="first_name" type="text" class="validate">
+      <label for="URL">URL</label>
+    </div>
+  </div>
+
+  {{link-list-grid}}
+  
 </div>
 {{outlet}}
 {{in-sidebar name="left-sidebar" show=(component "left-sidebar" model=model)}}

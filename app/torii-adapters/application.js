@@ -20,22 +20,23 @@ export default Ember.Object.extend({
     // (otherwise it would redirect you to the login page)
     this.set('storage.token', "dummyToken");
 
-    // let fbToken = authentication.accessToken;
-    // let userId = authentication.userId;
+    let fbToken = authentication.accessToken;
+    let userId = authentication.userId;
 
     return new Ember.RSVP.Promise((resolve, reject) => {
       Ember.$.ajax({
-        // TODO fill in backend URL
         type: 'POST',
-        url: 'api/session',
-        data: {'code':fbToken},
+        url: 'http://linkie-backend.herokuapp.com/auth/facebook',
+        data: {'access_token':fbToken},
         dataType: 'json',
         success: Ember.run.bind(null, resolve),
         error: Ember.run.bind(null, reject)
       });
     }, "Post fbToken to server").then((data) => {
-      let linkieToken = data.accessToken;
-      this.set('storage.token', linkieToken);
+      console.log(data);
+      // let linkieToken = data.user.accessToken;
+      // this.set('storage.token', linkieToken);
+      let token = "dummyToken";
       return { token };
     });
   },

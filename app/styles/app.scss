@@ -36,7 +36,6 @@ nav .brand-logo {
 }
 
 // Welcome area
-
 .cover-heading {
   font-size: 10rem;
   margin-bottom: 2vh;
@@ -68,7 +67,9 @@ nav .brand-logo {
 }
 
 .main-content {
-  padding-left: 240px;
+  padding-left: 280px;
+  padding-right: 50px;
+  padding-top: 30px;
 }
 
 .btn-toolbar {
@@ -79,6 +80,25 @@ nav .brand-logo {
   text-transform: none;
   font-size: 1.2rem;
 }
+
+.card {
+  max-height: 200px;
+}
+
+.card.small .card-content {
+  max-height: none;
+}
+
+.progress {
+  margin: 0;
+}
+
+/* fluid 5 columns */
+.grid-sizer,
+.grid-item { width: 20%; }
+/* 2 columns wide */
+.grid-item--width2 { width: 40%; }
+
 
 @media only screen and (max-width : 992px) {
   .main-content {
