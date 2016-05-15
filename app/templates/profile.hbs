@@ -5,16 +5,16 @@
 <div class="main-content">
 
   <div class="row">
-    <div class="col s3"><br /></div>
-
-    <div class="input-field col s6">
+    <div class="input-field col s6 offset-s3">
       <input placeholder="paste link here" id="first_name" type="text" class="validate">
-      <label for="URL">URL</label>
     </div>
   </div>
 
-  {{link-list-grid}}
-  
+  <div class="grid">
+    {{!-- pass the entire link store to the grid component --}}
+    {{link-list-grid links=model.links}}
+  </div>
+
 </div>
 {{outlet}}
 {{in-sidebar name="left-sidebar" show=(component "left-sidebar" model=model)}}

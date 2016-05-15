@@ -3,7 +3,8 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'linkie-webapp',
-    environment: environment,
+    // TODO change 'environment' to argument value
+    environment: 'development',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
