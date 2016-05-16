@@ -16,7 +16,7 @@ export default Ember.Object.extend({
 
   // resolve with session data and store token in local storage
   open(authentication) {
-    // let fbToken = authentication.accessToken;
+    let fbToken = authentication.accessToken;
     // let userId = authentication.userId;
 
     return new Ember.RSVP.Promise((resolve, reject) => {
@@ -39,6 +39,6 @@ export default Ember.Object.extend({
   // clear the local storage key and return a promise which will resolve.
   close() {
     this.set('storage.token', null);
-    return Ember.RSVP.resolve(label="close session");
+    return Ember.RSVP.resolve();
   }
 });
