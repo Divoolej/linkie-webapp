@@ -6,16 +6,10 @@
 
 <div class="main-content">
 
-  <div class="row">
-    <div class="input-field col s6 offset-s3">
-      <input placeholder="paste link here" id="first_name" type="text" class="validate">
-    </div>
-  </div>
-
-  <div class="grid">
-    {{!-- pass the entire link store to the grid component --}}
-    {{link-list-grid links=model.links}}
-  </div>
+<div class="grid">
+  {{!-- pass the entire link store to the grid component --}}
+  {{link-list-grid links=model.links}}
+</div>
 
 </div>
 {{outlet}}

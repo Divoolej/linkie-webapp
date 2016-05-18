@@ -1,5 +1,9 @@
+.topbar {
+  height: 10vh;
+}
+
 .topbar-brand-logo {
-  font-size: 3.5rem;
+  font-size: 4rem;
   padding-top: 2vh;
   padding-left: 20px;
   text-align: center;
@@ -8,19 +12,22 @@
 
 // element selectors are used for materialize.css style overrides
 // up to medium screen
+.navbar-fixed {
+  // height: 10vh;
+}
+
+
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  // height: 10vh;
+  line-height: normal;
+}
+
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
       left: 0%;
       transform: none;
     }
-}
-
-.navbar-fixed {
-  height: 10vh;
-}
-
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-  height: 10vh;
 }
 
 @media only screen and (max-height: 800px) {

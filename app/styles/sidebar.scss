@@ -34,7 +34,8 @@
 }
 
 .search {
-  margin-top: 1.5em;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 
   .search-wrapper {
     &.focused { margin: 0; }
@@ -83,6 +84,7 @@
 
 // category list
 .side-nav.fixed {
+  height: 90vh;
 
   .category-collection {
     max-height: 55vh;
