@@ -1,6 +1,7 @@
 // Adapter for backend authentication
 
 import Ember from 'ember';
+import config from '../config/environment';
 
 export default Ember.Object.extend({
   storage: Ember.inject.service(),
@@ -20,9 +21,10 @@ export default Ember.Object.extend({
     // let userId = authentication.userId;
 
     return new Ember.RSVP.Promise((resolve, reject) => {
+      console.log(config);
       Ember.$.ajax({
         type: 'POST',
-        url: 'http://linkie-backend.herokuapp.com/auth/facebook',
+        url: config.APP.apiURL + '/auth/facebook',
         data: {'access_token':fbToken},
         dataType: 'json',
         success: Ember.run.bind(null, resolve),
