@@ -7,6 +7,8 @@ module.exports = function(environment) {
     environment: 'development',
     baseURL: '/',
     locationType: 'auto',
+    apiURL: null,
+    fbAppId: null,
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -15,6 +17,8 @@ module.exports = function(environment) {
     },
 
     APP: {
+      apiURL: process.env.API_URL,
+      fbAppId: process.env.FACEBOOK_APP_ID
       // Here you can pass flags/options to your application instance
       // when it is created
     }
@@ -48,7 +52,7 @@ module.exports = function(environment) {
     sessionServiceName: 'session',
     providers: {
       'facebook-connect': {
-        appId: '578687135639440'
+        appId: ENV.APP.fbAppId
       }
     }
   }

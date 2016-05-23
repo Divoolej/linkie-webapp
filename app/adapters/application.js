@@ -1,4 +1,6 @@
+import Ember from 'ember';
 import DS from 'ember-data';
+import config from '../config/environment';
 
 export default DS.RESTAdapter.extend({
   storage: Ember.inject.service(),
@@ -16,6 +18,7 @@ export default DS.RESTAdapter.extend({
 // http://discuss.emberjs.com/t/passing-header-information-to-rest-get-request-using-restadapter/4220/9
 DS.RESTAdapter.reopen({
   // host: 'https://linkie-backend.herokuapp.com',
-  host: 'http://demo0486561.mockable.io/',
+  // host: 'http://demo0486561.mockable.io/',
+  host: config.APP.apiURL,
   namespace: ''
 });
