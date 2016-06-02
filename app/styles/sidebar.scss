@@ -3,7 +3,17 @@
   margin-top: 1.6em;
 }
 
-#logo-container {
+.side-nav {
+  margin-top: 10vh;
+}
+
+@media only screen and (max-height: 800px) {
+  .side-nav {
+    margin-top: 80px;
+  }
+}
+
+.logo-container {
   padding-top: 0.1em;
 }
 
@@ -23,9 +33,9 @@
   -ms-user-select:none;
 }
 
-
 .search {
-  margin-top: 1.5em;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
 
   .search-wrapper {
     &.focused { margin: 0; }
@@ -74,6 +84,7 @@
 
 // category list
 .side-nav.fixed {
+  height: 90vh;
 
   .category-collection {
     max-height: 55vh;

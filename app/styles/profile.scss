@@ -1,5 +1,5 @@
 .main-content {
-  height: 100vh;
+  height: calc(100% - 10vh);
   padding-left: 18.2em;
   padding-top: 1em;
   padding-right: 2em;
@@ -35,13 +35,13 @@
 .grid-item { width: 100%; }
 
 // 2 columns for small screens
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 401px) {
   .grid-sizer,
   .grid-item { width: 50%; }
 }
 
 // 3 columns for medium screens
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 601px) {
   .grid-sizer,
   .grid-item { width: 33.333%; }
 }
