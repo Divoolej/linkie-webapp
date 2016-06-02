@@ -16,8 +16,6 @@
   // height: 10vh;
 }
 
-
-
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   // height: 10vh;
   line-height: normal;
@@ -34,4 +32,8 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 80px;
   }
+}
+
+.inputbox {
+  float: none;
 }
