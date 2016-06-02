@@ -18,7 +18,6 @@ export default Ember.Object.extend({
   // resolve with session data and store token in local storage
   open(authentication) {
     let fbToken = authentication.accessToken;
-    // let userId = authentication.userId;
 
     return new Ember.RSVP.Promise((resolve, reject) => {
       console.log(config);
@@ -34,6 +33,7 @@ export default Ember.Object.extend({
       let linkieToken = data.accessToken;
       // save linkie token in local storage
       this.set('storage.token', linkieToken);
+      this.set('storage.userId', data.user.id);
       return { linkieToken };
     });
   },
