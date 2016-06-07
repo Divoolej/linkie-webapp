@@ -12,7 +12,6 @@ export default Ember.Route.extend({
 
   actions: {
     logout() {
-      // this.set('storage.token', undefined);
       this.get('session').close();
       this.transitionTo('landing');
     }
