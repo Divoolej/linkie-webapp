@@ -8,5 +8,14 @@ export default Ember.Route.extend({
       categories: this.store.query('category', { userId: this.get('storage.userId')}),
       links: this.store.query('link', { userId: this.get('storage.userId')}),
     });
+  },
+
+  actions: {
+    logout() {
+      // this.set('storage.token', undefined);
+      this.get('session').close();
+      this.transitionTo('landing');
+    }
   }
+
 });
