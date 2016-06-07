@@ -9,7 +9,8 @@ const STORAGE_ITEM = 'session';
 export default Ember.Service.extend({
   token: attr(),
   timeFormat: attr(),
-  userFilter: attr()
+  userFilter: attr(),
+  userId: attr()
 });
 
 function attr() {
