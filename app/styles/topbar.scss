@@ -34,18 +34,16 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   }
 }
 
-.inputbox {
-  display: inline-block;
-  margin-left: 27%;
-  // margin-right: 21%;
-}
-
 .logout-button {
   margin-top: 1.7vh !important;
   margin-right: 3vw !important;
 }
 
 #sidebar-slide-out-button {
-  margin-top: 2.4vh;
+  margin-top: 1.4vh;
   margin-left: 1vw;
+}
+
+.sidebar-slide-out-icon {
+  margin-top: 1.2vh;
 }
