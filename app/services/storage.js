@@ -10,7 +10,8 @@ export default Ember.Service.extend({
   token: attr(),
   timeFormat: attr(),
   userFilter: attr(),
-  userId: attr()
+  userId: attr(),
+  userAvatarUrl: attr()
 });
 
 function attr() {
