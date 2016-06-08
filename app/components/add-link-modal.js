@@ -7,7 +7,7 @@ export default Ember.Component.extend({
 
   actions: {
     submitLink() {
-      console.log('submitting link');
+      debugger;
     }
   }
 });

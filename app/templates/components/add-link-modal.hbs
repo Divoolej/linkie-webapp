@@ -6,28 +6,28 @@
 
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Google" id="link_title" type="text" class="validate">
+          {{input value=title placeholder="Google" id="link_title" type="text" class="validate"}}
           <label class="active" for="link_title">Title</label>
         </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="www.google.com" id="link_url" type="url" class="validate">
+          {{input value=url placeholder="www.google.com" id="link_url" type="url" class="validate"}}
           <label class="active" for="link_url">URL</label>
         </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
-          <select>
+          {{#x-select value=categoryId}}
             <option value="" disabled selected>Choose a category</option>
 
-            {{#each categories as |category|}}
-              <option value={{category.name}}>{{category.name}}</option>
-            {{/each}}
+              {{#each categories as |category|}}
+                {{#x-option value=category.id}}{{category.name}}{{/x-option}}
+              {{/each}}
 
-          </select>
+          {{/x-select}}
           <label>Category</label>
         </div>
       </div>
