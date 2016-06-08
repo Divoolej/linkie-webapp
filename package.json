@@ -51,6 +51,7 @@
     "ember-resolver": "^2.0.3",
     "ember-sidebars": "0.2.1",
     "ember-truth-helpers": "1.2.0",
+    "emberx-select": "2.1.2",
     "isotope": "0.0.1-security",
     "liquid-fire": "0.23.1",
     "loader.js": "^4.0.4",

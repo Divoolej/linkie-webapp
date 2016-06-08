@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
       categories: this.store.query('category', { userId: this.get('storage.userId')}),
-      links: this.store.query('link', { userId: this.get('storage.userId')}),
+      links: this.store.query('link', { userId: this.get('storage.userId')}, { reload: true }),
     });
   },
 
@@ -14,7 +14,12 @@ export default Ember.Route.extend({
     logout() {
       this.get('session').close();
       this.transitionTo('landing');
-    }
+    },
+
+    refreshModel() {
+      this.refresh();
+    },
+
   }
 
 });
