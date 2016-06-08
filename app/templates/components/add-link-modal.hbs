@@ -1,9 +1,41 @@
 <div id="modal1" class="modal">
   <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
+    <h4>Add a link</h4>
+
+    <form class="col s12">
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="link_title" type="text" class="validate">
+          <label class="active" for="link_title">Title</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="link_url" type="url" class="validate">
+          <label class="active" for="link_url">URL</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Choose a category</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+          <label>Category</label>
+        </div>
+      </div>
+
+    </form>
+
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+    </div>
+
   </div>
-  <div class="modal-footer">
-    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-  </div>
+
 </div>
