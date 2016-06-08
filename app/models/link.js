@@ -5,5 +5,5 @@ export default DS.Model.extend({
   title: attr('string'),
   url: attr('string'),
   addedAt: attr('date'),
-  category: DS.belongsTo({async: true})
+  categoryId: attr('string')
 });
