@@ -1,9 +1,14 @@
-import Model from 'ember-data/model';
+import DS from 'ember-data';
 import attr from 'ember-data/attr';
 
-export default Model.extend({
+export default DS.Model.extend({
   title: attr('string'),
   description: attr('string'),
   url: attr('string'),
-  addedAt: attr('date')
+  addedAt: attr('date'),
+
+  link: DS.hasMany('link', { inverse: 'category' }),
+  category: DS.belongsTo('link', { inverse: 'link' }),
+
+  categoryId: attr('string')
 });
