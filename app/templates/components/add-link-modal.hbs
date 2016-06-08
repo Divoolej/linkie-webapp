@@ -1,6 +1,6 @@
 <div id="modal1" class="modal">
   <div class="modal-content">
-    <h4 class="modal-title">Add a link</h4>
+    <h4 class="modal-title">Add link</h4>
 
     <form class="col s12">
 
@@ -22,9 +22,11 @@
         <div class="input-field col s12">
           <select>
             <option value="" disabled selected>Choose a category</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
+
+            {{#each categories as |category|}}
+              <option value={{category.name}}>{{category.name}}</option>
+            {{/each}}
+
           </select>
           <label>Category</label>
         </div>
