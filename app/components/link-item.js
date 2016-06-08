@@ -8,6 +8,7 @@ export default Ember.Component.extend({
       this.get('store').findRecord('link', id).then(function(link) {
         link.destroyRecord();
       });
+      this.destroy();
     }
   }
 });
