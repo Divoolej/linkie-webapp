@@ -2,9 +2,12 @@
   height: 10vh;
 }
 
+nav .nav-wrapper {
+  height: 10vh;
+}
+
 .topbar-brand-logo {
-  font-size: 4rem;
-  padding-top: 2vh;
+  font-size: 7vh;
   padding-left: 20px;
   text-align: center;
   font-family: 'Shadows Into Light', cursive;
@@ -17,7 +20,6 @@
 }
 
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-  // height: 10vh;
   line-height: normal;
 }
 
@@ -40,10 +42,15 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 }
 
 #sidebar-slide-out-button {
-  margin-top: 1.4vh;
+  height: 8vh;
+  margin-top: 1.2vh;
   margin-left: 1vw;
 }
 
 .sidebar-slide-out-icon {
-  margin-top: 1.2vh;
+  margin-top: 1.6vh;
+}
+
+.button-collapse.top-nav i {
+  font-size: 4.5vh;
 }
