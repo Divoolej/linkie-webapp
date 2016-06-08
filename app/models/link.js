@@ -8,7 +8,7 @@ export default DS.Model.extend({
   addedAt: attr('date'),
 
   link: DS.hasMany('link', { inverse: 'category' }),
-  category: DS.belongsTo('link', { inverse: 'link' }),
+  category: DS.belongsTo('category', { inverse: 'link' }),
 
   categoryId: attr('string')
 });
