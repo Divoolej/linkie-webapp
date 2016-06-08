@@ -27,6 +27,16 @@
   .card-action {
     padding: 0.8em;
   }
+
+  .link-delete {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    cursor: pointer;
+    color: bisque;
+    font-size: x-large;
+    font-family: cursive;
+  }
 }
 
 // tiny screens
