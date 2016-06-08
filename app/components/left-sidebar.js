@@ -2,15 +2,15 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   didInsertElement() {
-    this.$(".button-collapse").sideNav({
-      closeOnClick: true
+    Ember.$(".button-collapse").sideNav({
+      closeOnClick: false
     });
-    this.$(".search-wrapper").focusin(function() {
-      $(this).addClass("focused");
+    Ember.$(".search-wrapper").focusin(function() {
+      Ember.$(this).addClass("focused");
     });
-    this.$(".search-wrapper").focusout(function() {
-      $(this).removeClass("focused");
+    Ember.$(".search-wrapper").focusout(function() {
+      Ember.$(this).removeClass("focused");
     });
-    this.$("#search").attr("maxlength", 20);
+    Ember.$("#search").attr("maxlength", 20);
   }
 });

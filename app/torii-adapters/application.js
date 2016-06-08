@@ -34,6 +34,7 @@ export default Ember.Object.extend({
       // save linkie token in local storage
       this.set('storage.token', linkieToken);
       this.set('storage.userId', data.user.id);
+      this.set('storage.userAvatarUrl', data.user.avatarUrl);
       return { linkieToken };
     });
   },

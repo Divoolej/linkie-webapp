@@ -4,6 +4,12 @@
 
       {{#link-to 'profile' class="topbar-brand-logo"}}linkie{{/link-to}}
 
+      <ul class="left hide-on-large-only">
+        <a id="sidebar-slide-out-button" href="#" data-activates="slide-out" class="button-collapse top-nav waves-effect waves-light circle">
+          <i class="material-icons sidebar-slide-out-icon">menu</i>
+        </a>
+      </ul>
+
       <ul class="right hide-on-med-and-down">
         <li>
           {{avatar-img}}
@@ -12,12 +18,6 @@
           <a {{action '_logout'}} class="waves-effect waves-light btn-large logout-button">Logout</a>
         </li>
       </ul>
-
-        <ul class="center inputbox">
-          <li class="input-field">
-            <input placeholder="paste link here" id="first_name" type="text" class="validate">
-          </li>
-        </ul>
 
     </div>
   </nav>

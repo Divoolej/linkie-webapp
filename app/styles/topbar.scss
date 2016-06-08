@@ -2,9 +2,12 @@
   height: 10vh;
 }
 
+nav .nav-wrapper {
+  height: 10vh;
+}
+
 .topbar-brand-logo {
-  font-size: 4rem;
-  padding-top: 2vh;
+  font-size: 6.5vh;
   padding-left: 20px;
   text-align: center;
   font-family: 'Shadows Into Light', cursive;
@@ -17,7 +20,6 @@
 }
 
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-  // height: 10vh;
   line-height: normal;
 }
 
@@ -34,13 +36,21 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   }
 }
 
-.inputbox {
-  display: inline-block;
-  margin-left: 27%;
-  // margin-right: 21%;
-}
-
 .logout-button {
   margin-top: 1.7vh !important;
   margin-right: 3vw !important;
+}
+
+#sidebar-slide-out-button {
+  height: 8vh;
+  margin-top: 0.8vh;
+  margin-left: 1vw;
+}
+
+.sidebar-slide-out-icon {
+  margin-top: 1.8vh;
+}
+
+.button-collapse.top-nav i {
+  font-size: 4.5vh;
 }

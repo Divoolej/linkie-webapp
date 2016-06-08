@@ -2,6 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   didInsertElement() {
-    $('select').material_select();
+    Ember.$('select').material_select();
+  },
+
+  actions: {
+    submitLink() {
+      console.log('submitting link');
+    }
   }
 });
