@@ -31,6 +31,7 @@ export default Ember.Object.extend({
       });
     }, "Post fbToken to server").then((data) => {
       let linkieToken = data.accessToken;
+      debugger;
       // save linkie token in local storage
       this.set('storage.token', linkieToken);
       this.set('storage.userId', data.user.id);
