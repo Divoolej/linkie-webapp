@@ -8,20 +8,22 @@ export default Ember.Component.extend({
   },
 
   actions: {
-    submitLink() {
+    _submitLink() {
       // obtain data from the form
       let link = this.get('store').createRecord('link', {
         title: this.get('title'),
         url: this.get('url'),
         categoryId: this.get('categoryId')
       });
-      // POST data to server
+      // POST data to server in profile route
       link.save();
 
-      let iso = new Isotope('#links-grid');
-      iso.appended( link )
-      iso.layout();
+      // let iso = this.$().isotope();
+      // iso.insert(link);
+      // iso.appended( link );
+      // iso.layout();
 
+      // this.sendAction('submitLink', link);
     }
   }
 });
