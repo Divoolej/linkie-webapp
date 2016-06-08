@@ -1,9 +1,8 @@
-{{top-bar}}
+{{top-bar logout="logout"}}
 
 <div class="sidebar">
   {{show-sidebar name="left-sidebar"}}
 </div>
-{{avatar-img}}
 <div class="main-content">
 
 <div class="grid">
@@ -11,9 +10,9 @@
   {{link-list-grid links=model.links}}
 </div>
 
-{{floating-action-button}}
+{{floating-action-button }}
 
 </div>
 {{outlet}}
 {{in-sidebar name="left-sidebar" show=(component "left-sidebar" model=model)}}
-
+{{add-link-modal categories=model.categories}}

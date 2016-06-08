@@ -16,8 +16,6 @@
   // height: 10vh;
 }
 
-
-
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   // height: 10vh;
   line-height: normal;
@@ -34,4 +32,15 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 80px;
   }
+}
+
+.inputbox {
+  display: inline-block;
+  margin-left: 27%;
+  // margin-right: 21%;
+}
+
+.logout-button {
+  margin-top: 1.7vh !important;
+  margin-right: 3vw !important;
 }

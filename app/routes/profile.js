@@ -1,10 +1,20 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  storage: Ember.inject.service(),
+
   model() {
     return Ember.RSVP.hash({
-      categories: this.store.findAll('category'),
-      links: this.store.findAll('link')
+      categories: this.store.query('category', { userId: this.get('storage.userId')}),
+      links: this.store.query('link', { userId: this.get('storage.userId')}),
     });
+  },
+
+  actions: {
+    logout() {
+      this.get('session').close();
+      this.transitionTo('landing');
+    }
   }
+
 });
