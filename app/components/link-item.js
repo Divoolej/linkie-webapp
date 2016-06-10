@@ -8,7 +8,9 @@ export default Ember.Component.extend({
       this.get('store').findRecord('link', id).then(function(link) {
         link.destroyRecord();
       });
-      this.destroy();
+
+      let iso = Ember.$('.grid');
+      iso.isotope('remove', iso.find('.grid-item')[0]).isotope('layout');
     }
   }
 });
