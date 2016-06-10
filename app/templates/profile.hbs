@@ -15,4 +15,4 @@
 </div>
 {{outlet}}
 {{in-sidebar name="left-sidebar" show=(component "left-sidebar" model=model)}}
-{{add-link-modal categories=model.categories}}
+{{add-link-modal categories=model.categories refreshModel="refreshModel" submitLink="submitLink"}}

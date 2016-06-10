@@ -15,15 +15,30 @@ export default Ember.Component.extend({
         url: this.get('url'),
         categoryId: this.get('categoryId')
       });
+
+      let isoOptions = {
+        // options
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        masonry: {
+          columnWidth: '.grid-sizer'
+        },
+        sortBy: 'id'
+      };
+
       // POST data to server in profile route
-      link.save();
+      this.sendAction('submitLink', link);
 
-      // let iso = this.$().isotope();
-      // iso.insert(link);
-      // iso.appended( link );
-      // iso.layout();
+      this.sendAction('refreshModel');
 
-      // this.sendAction('submitLink', link);
+      Ember.$('#links-grid').isotope(isoOptions)
+      .append(link)
+      .isotope('appended', link)
+      .isotope('layout');
+
+      this.sendAction('refreshModel');
+
     }
+
   }
 });
