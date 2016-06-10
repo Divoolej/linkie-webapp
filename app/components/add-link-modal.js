@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   store: Ember.inject.service(),
+  storage: Ember.inject.service(),
 
   didInsertElement() {
     Ember.$('select').material_select();
@@ -16,22 +17,12 @@ export default Ember.Component.extend({
         categoryId: this.get('categoryId')
       });
 
-      let isoOptions = {
-        // options
-        itemSelector: '.grid-item',
-        percentPosition: true,
-        masonry: {
-          columnWidth: '.grid-sizer'
-        },
-        sortBy: 'id'
-      };
-
       // POST data to server in profile route
       this.sendAction('submitLink', link);
 
       this.sendAction('refreshModel');
 
-      Ember.$('#links-grid').isotope(isoOptions)
+      Ember.$('.grid').isotope(this.get('storage.isoOptions'))
       .append(link)
       .isotope('appended', link)
       .isotope('layout');

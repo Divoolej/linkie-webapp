@@ -1,19 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  storage: Ember.inject.service(),
+
   classNames: ['grid'],
 
-  isoOptions: {
-    // options
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    masonry: {
-      columnWidth: '.grid-sizer'
-    },
-    sortBy: 'id'
-  },
-
   didInsertElement() {
-    this.$().isotope(this.isoOptions);
+    this.$().isotope(this.get('storage.isoOptions'));
   }
 });
