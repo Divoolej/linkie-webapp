@@ -20,7 +20,8 @@ export default Ember.Service.extend({
     masonry: {
       columnWidth: '.grid-sizer'
     },
-    sortBy: 'id'
+    sortBy: 'id',
+    sortAscending: false
   },
 
 });
