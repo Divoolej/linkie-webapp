@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   store: Ember.inject.service(),
+  storage: Ember.inject.service(),
 
   didInsertElement() {
     Ember.$('select').material_select();
@@ -15,15 +16,20 @@ export default Ember.Component.extend({
         url: this.get('url'),
         categoryId: this.get('categoryId')
       });
+
       // POST data to server in profile route
-      link.save();
+      this.sendAction('submitLink', link);
 
-      // let iso = this.$().isotope();
-      // iso.insert(link);
-      // iso.appended( link );
-      // iso.layout();
+      this.sendAction('refreshModel');
 
-      // this.sendAction('submitLink', link);
+      Ember.$('.grid').isotope(this.get('storage.isoOptions'))
+      .append(link)
+      .isotope('appended', link)
+      .isotope('layout');
+
+      this.sendAction('refreshModel');
+
     }
+
   }
 });

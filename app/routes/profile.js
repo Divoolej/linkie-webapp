@@ -20,6 +20,10 @@ export default Ember.Route.extend({
       this.refresh();
     },
 
+    submitLink(link) {
+      link.save();
+    }
+
   }
 
 });

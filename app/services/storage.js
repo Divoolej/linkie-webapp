@@ -11,7 +11,18 @@ export default Ember.Service.extend({
   timeFormat: attr(),
   userFilter: attr(),
   userId: attr(),
-  userAvatarUrl: attr()
+  userAvatarUrl: attr(),
+
+  isoOptions: {
+    // options
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    masonry: {
+      columnWidth: '.grid-sizer'
+    },
+    sortBy: 'id'
+  },
+
 });
 
 function attr() {
