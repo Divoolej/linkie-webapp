@@ -83,7 +83,7 @@
   .category-collection {
     max-height: 55vh;
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
 
     .collection-item:last-child {
       border-bottom-style: dotted;
