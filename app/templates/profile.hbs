@@ -3,11 +3,13 @@
 <div class="sidebar">
   {{show-sidebar name="left-sidebar"}}
 </div>
+
 <div class="main-content">
 
 <div id="links-grid" class="grid">
-  {{!-- pass the entire link store to the grid component --}}
-  {{link-list-grid links=model.links submitLink="submitLink"}}
+
+  {{link-list-grid links=model.links removeLink=(action "controllerRemoveLink")}}
+
 </div>
 
 {{floating-action-button}}

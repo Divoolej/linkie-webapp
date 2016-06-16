@@ -2,15 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   store: Ember.inject.service(),
+  storage: Ember.inject.service(),
 
-  actions: {
-    destroyLink(id) {
-      this.get('store').findRecord('link', id).then(function(link) {
-        link.destroyRecord();
-      });
+  didInsertElement: function() {
+    Ember.$('.grid').isotope('prepended', Ember.$('#' + this.elementId)).isotope('layout');
+  },
 
-      let iso = Ember.$('.grid');
-      iso.isotope('remove', iso.find('.grid-item')[0]).isotope('layout');
-    }
-  }
+  willDestroyElement: function() {
+    Ember.$('.grid').isotope('remove', Ember.$('#' + this.elementId)).isotope('layout');
+  },
+
 });

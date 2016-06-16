@@ -6,6 +6,6 @@ export default Ember.Component.extend({
   classNames: ['grid'],
 
   didInsertElement() {
-    this.$().isotope(this.get('storage.isoOptions'));
+    Ember.$('.grid').isotope(this.get('storage.isoOptions')).isotope('layout');
   }
 });

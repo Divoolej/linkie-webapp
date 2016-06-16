@@ -19,16 +19,6 @@ export default Ember.Component.extend({
 
       // POST data to server in profile route
       this.sendAction('submitLink', link);
-
-      this.sendAction('refreshModel');
-
-      Ember.$('.grid').isotope(this.get('storage.isoOptions'))
-      .append(link)
-      .isotope('appended', link)
-      .isotope('layout');
-
-      this.sendAction('refreshModel');
-
     }
 
   }

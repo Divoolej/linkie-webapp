@@ -6,7 +6,9 @@ export default Ember.Route.extend({
   model() {
     return Ember.RSVP.hash({
       categories: this.store.query('category', { userId: this.get('storage.userId')}),
-      links: this.store.query('link', { userId: this.get('storage.userId')}, { reload: true }),
+      links: this.store.query('link', { userId: this.get('storage.userId')}, { reload: true }).then((response) => {
+        return response.toArray();
+      })
     });
   },
 
@@ -16,13 +18,10 @@ export default Ember.Route.extend({
       this.transitionTo('landing');
     },
 
-    refreshModel() {
-      this.refresh();
-    },
-
     submitLink(link) {
       link.save();
-    }
+      this.get('controller.model.links').pushObject(link);
+    },
 
   }
 
